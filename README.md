@@ -82,11 +82,11 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
 <img width="600" height="350" alt="Image" src="https://github.com/user-attachments/assets/7f6147a2-7b0c-4a1d-88d2-14ae4f5c1aa7" />
 
 <h2>🛠️ For the next 2 days, I will add a set of user's each day so that we can query user accounts based on their account age. </h2>
-<img width="600" height="350" alt="Image" src="https://github.com/user-attachments/assets/5b7b1594-ae06-4e7f-a60c-846228494349" /> <br>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/f6391e24-67d6-409a-beba-66e731f2e524" /><br>
 <b> ☝️For Reference below: </b><br>
-<b>• Spongebob User Accounts were created on 9/28. </b><br> 
-<b>• Jimmy Neutron User Accounts were created on 9/29.</b><br>
-<b>• iCarly  User Accounts were created on 9/30.</b><br>
+<b>• Spongebob User Accounts were created on 10/1. </b><br> 
+<b>• Jimmy Neutron User Accounts were created on 10/2.</b><br>
+<b>• iCarly  User Accounts were created on 10/3.</b><br>
 
 <h2> 📑 Let's first create a script to list the account's based on account age. </h2>
 
@@ -138,14 +138,14 @@ if ($filteredUsers.Count -eq 0) {
 <b> ☝️ Output the user account's if they are found based off account age, if there are no accounts found based on the input, it will output "No users found".</b><br>
 
 <h2>🛠️ NOW! Let's Try it out! </h2>
-<img width="600" height="350" alt="Image" src="https://github.com/user-attachments/assets/33316dbf-f31b-44d4-9556-8637830c5e01" /><br>
-<img width="600" height="350" alt="Image" src="https://github.com/user-attachments/assets/79c21f3c-f967-4dad-a63c-228f8244a18d" /><br>
-<img width="600" height="350" alt="Image" src="https://github.com/user-attachments/assets/f1253c47-ea9e-4309-856a-86376aa53eba" />
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/4f2d20b0-e8a4-407d-80f9-5e8a73182e26" /><br>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/cadbb255-f44d-4851-8ad9-f615c25c29fa" /><br>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/9707e361-243d-4d4d-8f79-ac63e9b579c7" /><br>
 
 <h2>🎉Woo-hoo! Now that we can query the account's based off age.</h2>
 <h2>☝️Let us now Banish them to the shadow realm!</h2>
 <b>• We will create a function to delete those accounts out</b><br>
-<b>• in a real-world scenario an example could be to delete account's that are 90 days old, etc.</b><br>
+<b>• in a real-world scenario an example could be to "delete account's that are 25 days old, etc."</b><br>
 
 ```powershell
     $confirm = Read-Host "`nDo you want to delete these users? Type 'YES' to confirm"
@@ -164,6 +164,24 @@ if ($filteredUsers.Count -eq 0) {
 <img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/a9d64f6a-10b7-4e76-9bd2-3fa0b9c632e6" />
 <h2>👨‍🔬Now Lets test it out!</h2>
 
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/f6391e24-67d6-409a-beba-66e731f2e524" /><br>
+<h2>🛸Here is the current _USERS OU</h2>
+<b>❎ Now let's NUKE some accounts BABY!</b>
+
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/5825affb-f132-42aa-b25c-a3ef4d5a6905" /><br>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/fceb6970-8940-4aa4-a3d9-c03872233ded" /><br>
+<b>❎ iCarly Users were banished after selecting INPUT == 0 for user's added today (Today's date 10/3/25, as i'm writing this).</b><br>
+
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/9636de9b-568c-4ede-a8c5-cdbafc05bc88" /><br>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/bfbdbb2c-75fd-411c-98e3-ae3f463a996c" /><br>
+<b>❎ Jimmy Neutron Users were banished after selecting INPUT == 1 for user's added YESTERDAY.</b><br>
+
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/f51b078a-7149-479c-97d8-c6a4fa5c0135" /><br>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/67cdc989-0a84-4ca3-beca-f94bd7c76379" /><br>
+<b>❎ Lastly the OG Spongebob Users were banished after selecting INPUT == 2 for user's added 2 days ago.</b><br>
+
+<h1>🧑‍💻 Thank you for Reading. Gotta Blast!</h1>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/bfbaa345-11d7-4106-b0e9-04da9f2c94d4" /><br>
 
 
 
