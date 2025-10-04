@@ -1,11 +1,11 @@
 <h1> 👨‍💻 Lets Play with some PowerShell Scripting for Active Directory</h1>
-<h2> 🎈 We are going to create a Domain using a Lab based off of Josh Madakor's Active Directory Home Lab in VirtualBox</h2>
+<h2> 🟡 We are going to create a Domain using a Lab based off of Josh Madakor's Active Directory Home Lab in VirtualBox</h2>
 <h2> 🎈 And then create a Powershell Script of our own that can delete the accounts in our AD after a certain amount of Days</h2>
 
 <h2>📑 Resources Used in this Lab/Write-Up</h2>
 • <a href="https://youtu.be/MHsI8hJmggI?si=pQBtzyS6Q2OPub0V">Josh Madakor's - Creation of a Home Lab running AD YOUTUBE video </a> <br>
 • <a href="https://github.com/ZN6Nate/ADPowershellScripting/blob/main/createUsers.ps1">Josh Madakor's CREATE_USERS script to create our users for the AD </a> <br>
-• <a href="https://github.com/ZN6Nate/ADPowershellScripting/blob/main/banishUsers.ps1">Script created by ME (Nathan Malaythong) to Banish User Accounts to the SHADOW REALM after a certain amount of Days </a> <br>
+• <a href="https://github.com/ZN6Nate/ADPowershellScripting/blob/main/banishUsers.ps1">PS Sciprt created by us to Banish User Accounts to the SHADOW REALM after a certain amount of Days </a> <br>
 
 <h2>🛠️ Utilities Needed and Programs Used</h2>
 <b>• Oracle VirtualBox</b> <br>
@@ -14,24 +14,27 @@
 <b>• Windows 10</b> <br>
 <b>• PowerShell</b> <br>
 
-<h2>Lets Go!</h2>
-<b> ‼️**NOTICE** ‼️ I am going to skip alot of steps in order to condense this write-up down for simplicity, but just refer to J. Madakor's Youtube video for Exact Steps </b> <br>
+<h1>🏌️LETS GO!</h1>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/18c408ed-5e7b-407a-a212-dde54e1cea3e" />
+
+<b> ‼️**NOTICE** ‼️</b><br>
+<b>☝️I am going to skip alot of steps in order to condense this write-up down for simplicity, but just refer to J. Madakor's Youtube video for Exact Steps </b> <br>
 <h2></h2>
 
-<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/51128e3f-e8c2-46f4-a9ab-d71742892d10" />
-<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/294ba4e9-d5d8-4858-a103-da49098777cb" />
-<h3>First Download VirtualBox and create your Windows Server Machine </h3>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/51128e3f-e8c2-46f4-a9ab-d71742892d10" />
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/294ba4e9-d5d8-4858-a103-da49098777cb" />
+<h3>❗First Download VirtualBox and create your Windows Server Machine </h3>
 
 <h2></h2>
 
-<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/083cc1a4-e4ed-4c70-880b-c2aad09e7e56" />
-<h3>Setup your server to Run Active Directory and Create your Custom Domain</h3>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/083cc1a4-e4ed-4c70-880b-c2aad09e7e56" />
+<h3>❗Setup your server to Run Active Directory and Create your Custom Domain</h3>
 <b>In this case we named our Domain to "KRUSTYKRAB.COM" - I absolutely love Spongebob BTW !</b>
 
 <h2></h2>
 
-<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/21699ddb-f9df-4490-b9f9-fa63e46930a4" />
-<h3>Use J. Madakor's CREATE_USER Script to add your list of User's in the Krusty Krab Domain, and create a _USERS Organizational Unit</h3>
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/21699ddb-f9df-4490-b9f9-fa63e46930a4" />
+<h3>❗Use J. Madakor's CREATE_USER Script to add your list of User's in the Krusty Krab Domain, and create a _USERS Organizational Unit</h3>
 <b> ☝️ Explanation on how J. Madakor's script works on adding users to the Domain </b> <br>
 
 ```powershell
@@ -72,14 +75,14 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
 
 <h2></h2>
 <h3></h3>
-<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/25478050-f90c-4d3f-a0da-4ad16faa6905" />
-<img width="600" height="350" alt="Image" src="https://github.com/user-attachments/assets/bc60443d-0eef-4582-bbba-b71006732ee3" />
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/25478050-f90c-4d3f-a0da-4ad16faa6905" />
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/bc60443d-0eef-4582-bbba-b71006732ee3" />
 <h2>🎉 And BOOM! We have a new set of user's in our Krusty Krab Domain.</h2> <br>
 <h1> 📑 Part 2 - Creation of our own script to QUERY & DELETE accounts based on account AGE 📑</h1><br>
 <h2>❗ For the next two days, I will add a new set of user's each day ❗ </h2>
 <h2>👨‍🔬 and then create a script of our own that can both query & delete user's based the age of the account's</h2>
 
-<img width="600" height="350" alt="Image" src="https://github.com/user-attachments/assets/7f6147a2-7b0c-4a1d-88d2-14ae4f5c1aa7" />
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/7f6147a2-7b0c-4a1d-88d2-14ae4f5c1aa7" />
 
 <h2>🛠️ For the next 2 days, I will add a set of user's each day so that we can query user accounts based on their account age. </h2>
 <img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/f6391e24-67d6-409a-beba-66e731f2e524" /><br>
@@ -180,7 +183,7 @@ if ($filteredUsers.Count -eq 0) {
 <img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/67cdc989-0a84-4ca3-beca-f94bd7c76379" /><br>
 <b>❎ Lastly the OG Spongebob Users were banished after selecting INPUT == 2 for user's added 2 days ago.</b><br>
 
-<h1>🧑‍💻 Thank you for Reading. Gotta Blast!</h1>
+<h1>🧑‍💻 That concludes our fun PowerShell Lab, Thank you for reading! 🚀Gotta Blast!</h1>
 <img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/bfbaa345-11d7-4106-b0e9-04da9f2c94d4" /><br>
 
 
