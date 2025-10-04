@@ -4,8 +4,8 @@
 
 <h2>📑 Resources Used in this Lab/Write-Up</h2>
 • <a href="https://youtu.be/MHsI8hJmggI?si=pQBtzyS6Q2OPub0V">Josh Madakor's - Creation of a Home Lab running AD YOUTUBE video </a> <br>
-• <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1">Josh Madakor's CREATE_USERS script to create our users for the AD </a> <br>
-• <a href="">Script created by ME (Nathan Malaythong) to Banish User Accounts to the SHADOW REALM after a certain amount of Days </a> <br>
+• <a href="https://github.com/ZN6Nate/ADPowershellScripting/blob/main/createUsers.ps1">Josh Madakor's CREATE_USERS script to create our users for the AD </a> <br>
+• <a href="https://github.com/ZN6Nate/ADPowershellScripting/blob/main/banishUsers.ps1">Script created by ME (Nathan Malaythong) to Banish User Accounts to the SHADOW REALM after a certain amount of Days </a> <br>
 
 <h2>🛠️ Utilities Needed and Programs Used</h2>
 <b>• Oracle VirtualBox</b> <br>
